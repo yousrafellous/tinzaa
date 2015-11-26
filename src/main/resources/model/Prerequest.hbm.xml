@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 oct. 2015 12:19:49 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+  <class catalog="tinza" name="model.Prerequest" optimistic-lock="version" table="prerequest">
+    <id name="id" type="int">
+      <column name="id"/>
+      <generator class="assigned"/>
+    </id>
+    <many-to-one class="model.User" fetch="select" name="user">
+      <column name="iduser" not-null="true"/>
+    </many-to-one>
+    <property name="city" type="string">
+      <column length="30" name="city" not-null="true"/>
+    </property>
+    <property name="picup" type="string">
+      <column length="30" name="city" not-null="true"/>
+    </property>
+    <property name="destination" type="string">
+      <column length="30" name="city" not-null="true"/>
+    </property>
+    <property name="object" type="string">
+      <column length="30" name="object" not-null="true"/>
+    </property>
+    <property name="date" type="date">
+      <column length="10" name="date"/>
+    </property>
+    <property name="size" type="string">
+      <column length="30" name="size"/>
+    </property>
+    <property name="transport" type="string">
+      <column length="30" name="transport"/>
+    </property>
+  </class>
+</hibernate-mapping>

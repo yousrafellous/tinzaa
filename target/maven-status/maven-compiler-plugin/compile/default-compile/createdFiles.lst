@@ -1,0 +1,15 @@
+controller\userController.class
+Validator\UserValidator.class
+controller\filterController.class
+model\ConfirmRegistr.class
+model\HibernateUtil.class
+controller\DeliveryserviceController.class
+controller\HTMLMail.class
+controller\ReinscriptionController.class
+controller\SimpleCORSFilter.class
+model\Prerequest.class
+model\Deliveryservice.class
+controller\landingpageController.class
+controller\userFunction.class
+model\User.class
+controller\ConfirmRegistrController.class
